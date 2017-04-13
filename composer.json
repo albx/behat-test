@@ -1,0 +1,33 @@
+{
+    "name": "albx/behat-test",
+    "description": "testing to learn behat",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alberto Mori",
+            "email": "albi.mori@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "silex/silex": "^2.0",
+        "twig/twig": "^2.3"
+    },
+    "require-dev": {
+        "behat/behat": "^3.2",
+        "phpunit/phpunit": "^6.1",
+        "behat/mink": "^1.7",
+        "behat/mink-browserkit-driver": "^1.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "BehatTest\\": "src/BehatTest"
+        },
+        "files": [
+            "vendor/phpunit/phpunit/src/Framework/Assert/Functions.php"
+        ]
+    },
+    "scripts": {
+        "test": "vendor/bin/behat"
+    }
+}
